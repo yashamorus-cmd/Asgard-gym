@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASGARD — Абонементи та ціни</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="prices.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="ASGARD — на головну"><svg viewBox="0 0 60 60" aria-hidden="true"><polygon points="6,26 26,6 52,6 40,18 30,18 18,30" fill="#9cc3ff"/><polygon points="54,34 34,54 8,54 20,42 30,42 42,30" fill="#4f8bff"/></svg><span>ASGARD</span></a>
+  <button class="burger" aria-label="Меню" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <nav id="menu">
+    <a href="index.html">Види спорту</a>
+    <a href="schedule.html">Розклад</a>
+    <a href="prices.html">Абонементи та ціни</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Абонементи та ціни</h1>
+  <p class="lead" id="lead">Обери напрям, і ми покажемо ціни саме для нього.</p>
+
+  <div class="picker" id="picker">
+    <button type="button" data-sport="all">Усі напрями</button>
+    <button type="button" data-sport="muay">Тайський бокс</button>
+    <button type="button" data-sport="personal">Індивідуальні</button>
+    <button type="button" data-sport="kick">Кікбоксинг</button>
+    <button type="button" data-sport="kids">Karate Kids</button>
+    <button type="button" data-sport="fitness">Fitness</button>
+  </div>
+
+  <div class="plans" id="plans">
+    <article class="plan glow" data-plan="single"><h2>Разове заняття</h2><div class="price"><span class="num">200</span> <small>грн</small></div><p>Одне тренування обраного напряму.</p><a href="#">Записатися</a></article>
+    <article class="plan glow" data-plan="eight"><h2>8 занять</h2><div class="price"><span class="num">1 200</span> <small>грн / міс</small></div><p>Двічі на тиждень, у зручний для тебе час.</p><a href="#">Записатися</a></article>
+    <article class="plan glow" data-plan="unlimited"><h2>Безліміт</h2><div class="price"><span class="num">1 800</span> <small>грн / міс</small></div><p>Скільки завгодно занять з понеділка по суботу.</p><a href="#">Записатися</a></article>
+  </div>
+  <p class="note" id="note"></p>
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div><h3>ASGARD</h3><p>Зал єдиноборств і фітнесу. Тайський бокс, кікбоксинг, Karate Kids, індивідуальні тренування та фітнес.</p></div>
+    <div><h3>Години роботи</h3><p>Понеділок–Субота<br>з 9:00 по 21:00<br>Неділя — вихідний</p></div>
+    <div><h3>Контакти</h3><p>вул. Героїв Майдану, 184<br><a href="tel:+380000000000">+38 (000) 000-00-00</a><br><a href="mailto:info@asgard.example">info@asgard.example</a></p></div>
+  </div>
+  <p class="copy">© 2026 ASGARD. Усі права захищені.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

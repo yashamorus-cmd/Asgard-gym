@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASGARD — Види спорту</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sports.css">
+</head>
+<body>
+<header class="nav">
+    <a class="brand" href="index.html" aria-label="ASGARD — на головну"><i class="logo" aria-hidden="true"></i><span>ASGARD</span></a>  <button class="burger" aria-label="Меню" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <nav id="menu">
+    <a href="index.html">Види спорту</a>
+    <a href="schedule.html">Розклад</a>
+    <a href="prices.html">Абонементи та ціни</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Тренуйся<br>як воїн</h1>
+    <p class="tag">Зал єдиноборств і фітнесу для дорослих та дітей.</p>
+    <div class="chips"><span class="chip">5 напрямів</span><span class="chip">Пн–Сб</span><span class="chip">9:00–21:00</span></div>
+    <a class="btn" href="#sports">Обрати напрям</a>
+  </section>
+
+  <ul class="sports" id="sports">
+    <li class="sport glow" data-tag="Muay Thai"><a class="sport-link" href="prices.html?sport=muay"><h2>Тайський бокс</h2><p>Удари руками, ногами, ліктями та колінами. Сила й витривалість.</p><span class="sport-cta">Ціни та запис</span></a></li>
+    <li class="sport glow" data-tag="Personal"><a class="sport-link" href="prices.html?sport=personal"><h2>Індивідуальні тренування</h2><p>Програма під твою ціль і рівень разом із тренером.</p><span class="sport-cta">Ціни та запис</span></a></li>
+    <li class="sport glow" data-tag="Kickboxing"><a class="sport-link" href="prices.html?sport=kick"><h2>Кікбоксинг</h2><p>Динамічні заняття з ударною технікою та кардіо.</p><span class="sport-cta">Ціни та запис</span></a></li>
+    <li class="sport glow" data-tag="Kids"><a class="sport-link" href="prices.html?sport=kids"><h2>Karate Kids</h2><p>Карате для дітей: дисципліна, увага і впевненість.</p><span class="sport-cta">Ціни та запис</span></a></li>
+    <li class="sport glow" data-tag="Fitness"><a class="sport-link" href="prices.html?sport=fitness"><h2>Fitness</h2><p>Групові та вільні тренування для форми й самопочуття.</p><span class="sport-cta">Ціни та запис</span></a></li>
+  </ul>
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div><h3>ASGARD</h3><p>Зал єдиноборств і фітнесу. Тайський бокс, кікбоксинг, Karate Kids, індивідуальні тренування та фітнес.</p></div>
+    <div><h3>Години роботи</h3><p>Понеділок–Субота<br>з 9:00 по 21:00<br>Неділя — вихідний</p></div>
+    <div><h3>Контакти</h3><p>вул. Героїв Майдану, 184<br><a href="tel:+380000000000">+38 (000) 000-00-00</a><br><a href="mailto:info@asgard.example">info@asgard.example</a></p></div>
+  </div>
+  <p class="copy">© 2026 ASGARD. Усі права захищені.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
